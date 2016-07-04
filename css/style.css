@@ -1,0 +1,56 @@
+body, div, ul, li
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul, li
+{
+    list-style: none;
+}
+
+div.clear
+{
+    clear: both;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body
+{
+    margin: auto;
+    background-color: #fff;
+    width: 100%;
+}
+
+header
+{
+    background-image: linear-gradient(to bottom, #fefefe, #eff0f0);
+    height: 127px; /*to del*/
+}
+
+.up_row
+{
+    width: 980px;
+    margin: 0 auto;
+}
+
+.logo   
+{
+    display: inline-block;
+    margin-top: 33px;
+    height: inherit;
+}
+
+.slogan
+{
+    font-family: Tahoma, 'Geneva CY', sans-serif;
+    font-size: 12px;
+    width: 160px;
+    color: #2a292a;
+    display: inline-block;
+    margin: 29px 0 0 0;
+}
