@@ -39,15 +39,19 @@ body
 header
 {
     background-image: linear-gradient(to bottom, #fefefe, #eff0f0);
-    height: 127px; /*to del*/
     font-family: Tahoma, 'Geneva CY', sans-serif;
 }
 
-.up_row
+.header_row
 {
     width: 980px;
     margin: 0 auto;
     overflow: hidden;
+}
+
+.header_row:last-child
+{
+    padding-top: 3px;
 }
 
 .logo   
@@ -110,4 +114,84 @@ header
     padding: 7px 12px 11px;
     text-align: center;
     margin-top: 32px;
+}
+
+.header_menu
+{
+    background-image: linear-gradient(to bottom, #f4f4f4, #ffffff);
+    float: left;
+}
+
+.header_menu ul
+{
+    padding: 0 1px;
+}
+
+.header_menu ul li
+{
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.header_menu ul li:first-child
+{
+    margin-left: 0;
+}
+
+.menu_item
+{
+    background-image: linear-gradient(to bottom, #f4f4f4, #e8eae9);
+    display: block;
+    font-size: 14px;
+    border-bottom: 3px solid #afb2c1;
+    padding: 13px 21px 15px 23px;
+    color: #343434;
+}
+
+.menu_item:hover,.active
+{
+    border-bottom: 3px solid #B31D27;
+    border-left: 1px solid #eff0f0;
+    padding-left: 22px;
+    background-image: linear-gradient(to bottom, #f4f4f4, #ffffff)
+}
+
+.right_bar
+{
+    float: right;
+    padding-top: 12px;
+}
+
+.header_icon
+{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    margin-right: 1px;
+    vertical-align: bottom;
+}
+
+.enter
+{
+    background: url('../img/icons.png') no-repeat 0 -45px;    
+}
+
+.star
+{
+    background: url(../img/icons.png) no-repeat -156px -93px;
+}
+
+.right_bar_item
+{
+    display: inline-block;
+    text-align: center;
+    line-height: 17px;
+    font-size: 11px;
+    color: #343434;
+    text-decoration: underline;
+}
+
+.right_bar_item:first-child
+{
+    margin-right: 7px;
 }
