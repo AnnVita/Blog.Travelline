@@ -19,6 +19,16 @@ a
     text-decoration: none;
 }
 
+a img
+{
+    border: none;
+}
+
+img
+{
+    display: block;
+}
+
 body
 {
     margin: auto;
@@ -30,27 +40,74 @@ header
 {
     background-image: linear-gradient(to bottom, #fefefe, #eff0f0);
     height: 127px; /*to del*/
+    font-family: Tahoma, 'Geneva CY', sans-serif;
 }
 
 .up_row
 {
     width: 980px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .logo   
 {
-    display: inline-block;
-    margin-top: 33px;
-    height: inherit;
+    float: left;
+    margin: 33px 41px 0 0;
 }
 
 .slogan
 {
-    font-family: Tahoma, 'Geneva CY', sans-serif;
     font-size: 12px;
     width: 160px;
     color: #2a292a;
-    display: inline-block;
+    float: left;
     margin: 29px 0 0 0;
+    line-height: 1.5;
+}
+
+.skolkovo
+{
+    float: right;
+    margin-right: 52px; 
+}
+
+.support
+{
+    float: right;
+    font-weight: 400;
+    color: #646464;
+    width: 190px;
+    padding: 10px 15px;
+    margin: 21px 7px 0 0;
+}
+
+.support_header
+{
+    font-size: 11px;
+}
+
+.support_header a
+{
+    font-weight: bold;
+    font-size: 16px;
+    color: #343434;
+}
+
+.support_header span
+{
+    border-bottom: 1px dashed #b5c1ed;
+}
+
+.catalog
+{
+    float: right;
+    display: block;
+    background: url(../img/buttions.png) no-repeat 0 -80px;
+    font-family: "Franklin Gothic Book", sans-serif;
+    font-size: 13px;
+    color: #fff;
+    padding: 7px 12px 11px;
+    text-align: center;
+    margin-top: 32px;
 }
