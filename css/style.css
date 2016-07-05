@@ -1,12 +1,7 @@
-body, div, ul, li
+body, div, ul, li, p
 {
     margin: 0;
     padding: 0;
-}
-
-ul, li
-{
-    list-style: none;
 }
 
 div.clear
@@ -162,22 +157,28 @@ header
     padding-top: 12px;
 }
 
-.header_icon
+.icon
 {
-    width: 17px;
-    height: 17px;
     display: inline-block;
-    margin-right: 1px;
     vertical-align: bottom;
 }
 
-.enter
+.right_bar .icon
 {
+    margin-right: 1px;
+}
+
+.person
+{
+    width: 17px;
+    height: 17px;
     background: url('../img/icons.png') no-repeat 0 -45px;    
 }
 
 .star
 {
+    width: 17px;
+    height: 17px;
     background: url(../img/icons.png) no-repeat -156px -93px;
 }
 
@@ -194,4 +195,135 @@ header
 .right_bar_item:first-child
 {
     margin-right: 7px;
+}
+
+.content_container
+{
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.posts_container
+{
+    float: left;
+    width: 733px;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.post_image
+{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.post_image image
+{
+    display: inline-block;
+}
+
+.image_header
+{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.33) 0%,rgba(0,0,0,0.94) 100%);
+    width: 694px;
+}
+
+.post_title
+{
+    font: 36px 'Franklin Gothic Book', sans-serif;
+    padding: 15px 30px;
+    margin: 0;
+}
+
+.post_title a
+{
+    color: #fff;
+    border-bottom:1px solid #fff;
+    text-decoration:none
+}
+
+.image_footer
+{
+    float: left;
+    background: #01080d;
+    padding: 2px 10px 3px 10px;
+    margin: 0 0 10px 20px;
+    font: 12px 'Tahoma', sans-serif;
+}
+
+.time
+{
+    margin-right: 15px;
+}
+
+.time,.image_footer a
+{
+    color: #858585;
+}
+
+.author
+{
+    margin-right: 17px;
+}
+
+.image_footer .icon
+{
+    margin-right: 7px;
+}
+
+.flag
+{
+    width: 12px;
+    height: 13px;
+    background: url('../img/icons.png') no-repeat -88px -103px; 
+}
+
+.post_text, .post_text a
+{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 160%;
+}
+
+.post_text a, .tags a
+{
+    color: #354f71;
+    text-decoration: underline;
+}
+
+.post_text p
+{
+    margin-bottom: 15px;
+}
+
+.post_text ul
+{
+    list-style-position: inside;
+    margin: 0 0 10px 21px;
+}
+
+.post_text li
+{
+    line-height: 200%;
+}
+
+.tag_ico
+{
+    background: url('../img/icons.png') no-repeat -47px -103px;
+    width: 23px;
+    height: 13px;
+}
+
+.tags a
+{
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.widget_container
+{
+    float: right;
 }
