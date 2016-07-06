@@ -202,6 +202,12 @@ header
     width: 980px;
     margin: 0 auto;
     overflow: hidden;
+    padding-top: 30px;
+}
+
+.post
+{
+    margin-bottom: 20px;
 }
 
 .posts_container
@@ -352,7 +358,7 @@ header
     height: 16px;
 }
 
-.vk
+.vkontake
 {
     background: url('../img/social.jpg') no-repeat 0 -60px;
     width: 16px;
@@ -366,7 +372,7 @@ header
     height: 20px;
 }
 
-.ok
+.odnoklassniki
 {
     background: url('../img/social.jpg') no-repeat -6px -3px;
     width: 10px;
@@ -388,4 +394,378 @@ a.commentary
 .widget_container
 {
     float: right;
+    width: 224px;
+}
+
+.widget_item
+{
+    background: #EFF0F2 url('../img/widget-bg.png');
+}
+
+.subscribe_form
+{
+    color: #354f71;
+    margin-bottom: 20px;
+    font: 12px 'Tahoma', sans-serif;
+    padding: 15px 12px 10px 12px;
+    border: 8px solid #eff0f2;
+}
+
+.widget_header
+{
+    color: #354f71;
+    font: 17px 'Franklin Gothic', sans-serif;
+    margin-bottom: 15px;
+}
+
+.subscribe_form .input_email
+{
+    height: 30px;
+    width: 166px;
+    border-radius: 4px;
+    padding: 0 8px;
+    box-shadow: inset 0 1px 4px 0 #eee;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.subscribe_form .subscribe
+{
+    background-color: #4a68ac;
+    background-image: linear-gradient(to bottom, #5574b8, #3c589d);
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #6c8cd1;
+    box-shadow: 0 1px 2px 0px rgba(166, 166, 166, 0.5);
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.subscribe_form .subscribers
+{
+    font-size: 11px;
+    color: #768fa5;
+    font-style: italic;
+}
+
+.blog_search
+{
+    padding: 26px 20px;
+    margin-bottom: 20px;
+}
+
+.blog_search .widget_header, .popular_posts .widget_header
+{
+    padding-left: 5px;
+    margin-bottom: 13px;
+}
+
+.input_search
+{
+    height: 30px;
+    width: 145px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 8px;
+    box-shadow: inset 0 1px 4px 0 #eee;
+    border: 1px solid #ccc;
+}
+
+.search
+{
+    background: url('../img/search-button.png');
+    width: 30px;
+    height: 30px;
+    float: right;
+    border: 0;
+}
+
+.popular_posts
+{
+     padding: 26px 20px;
+     font-family:'Tahoma', sans-serif;
+}
+
+.popular_posts ul
+{
+    list-style: none;
+}
+
+.popular_posts li
+{
+    margin-bottom: 24px;
+    margin-left: 5px;
+}
+
+.popular_posts li:last-child
+{
+    margin-bottom: 0;
+}
+
+.popular_posts .date
+{
+    color: #fff;
+    font-size: 11px;
+    padding: 3px 4px;
+    font-weight: normal;
+    background: #718f9f;
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.popular_posts a
+{
+    color: #354f71;
+    text-decoration: underline;
+    font: inherit;
+    font-size: 11px;
+    display: block;
+}
+
+.footer_menu
+{
+    background-image: radial-gradient(#1a4988, #013c7b);
+}
+
+.footer_container
+{
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 38px 0 4px 40px;
+}
+
+.colomn
+{
+    float: left;
+    font-family: 'Tahoma', sans-serif;
+    margin-right: 45px;
+}
+
+.colomn:first-child
+{
+    margin-right: 100px;
+}
+
+.colomn:last-child
+{
+    float: right;
+    margin-right: 85px;
+}
+.colomn_title
+{
+    font-family: "Franklin Gothic Book", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.colomn ul
+{
+    list-style: none;
+    font-size: 11px;
+    color: #a8c5ff;
+    line-height: 22px;
+    font-family: 'Tahoma', sans-serif;
+    margin-bottom: 26px;
+}
+
+.colomn ul li a
+{
+    text-decoration: underline;
+    font-size: 11px;
+    color: #a8c5ff;
+    line-height: 22px;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.phone_ico
+{
+    background: url('../img/icons.png') no-repeat -200px -50px;
+    width: 26px;
+    height: 26px;
+    float: left;
+    margin-right: 5px;
+}
+
+.email_ico
+{
+    background: url('../img/icons.png') no-repeat -150px -50px;
+    width: 26px;
+    height: 26px;
+    float: left;
+    margin-right: 5px;
+}
+
+.partner_ico
+{
+    background: url('../img/icons.png') no-repeat -200px 0;
+    width: 26px;
+    height: 26px;
+    float: left;
+    margin-right: 5px;
+}
+
+.tel
+{
+    font-size: 18px;
+    color: #fff;
+    display: inline-block;
+}
+
+ul.contact
+{
+    padding-top: 14px;
+}
+
+ul.contact li
+{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+ul.contact li a
+{
+    display: inline-block;
+}
+
+.footer_down
+{
+    background: url('../img/footer-bg.png');
+}
+
+.footer_down_container
+{
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px 0 30px 40px;
+}
+
+.colomn_down
+{
+    float: left;
+    font-family: 'Tahoma', sans-serif;
+    margin-right: 97px;
+}
+
+.footer_logo
+{
+    background: url('../img/footer-logo.png') no-repeat 0 0;
+    width: 143px;
+    height: 23px;
+}
+
+.footer_title
+{
+    color: #4858a8;
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+ul.social_in_footer
+{
+    float: left;
+    list-style: none;
+    margin: 5px 78px 0 0;
+}
+
+.social_in_footer li
+{
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.social_in_footer a
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.fb
+{
+    background:  url(../img/socialnetwork_new.png) no-repeat 0 0;
+}
+
+.tw
+{
+    background:  url(../img/socialnetwork_new.png) no-repeat -34px -27px;
+}
+
+.vk
+{
+    background:  url(../img/socialnetwork_new.png) no-repeat -68px -27px;
+}
+
+.ok
+{
+    background:  url(../img/socialnetwork_new.png) no-repeat -136px 0;
+}
+
+.gl
+{
+    background:  url(../img/socialnetwork_new.png) no-repeat -170px 0;
+}
+
+.yt
+{
+    background:  url(../img/socialnetwork_new.png) no-repeat -204px 0;
+}
+
+.in
+{
+    background:  url(../img/socialnetwork_new.png) no-repeat -238px 0;
+}
+
+.ss
+{
+    background:  url(../img/socialnetwork_new.png) no-repeat -272px 0;
+}
+
+.ln
+{
+    background:  url(../img/socialnetwork_new.png) no-repeat -102px 0;
+}
+
+a.yandex
+{
+    background:  url(../img/cycounter.gif) no-repeat;
+    width: 88px;
+    height: 31px;
+    display: inline-block;
+    margin: 5px 0 0 0;
+}
+
+.windows
+{
+    background:  url(../img/windows.png) no-repeat;
+    width: 57px;
+    height: 72px;
+    float: right;
+}
+
+.footer_win
+{
+    float: right;
+    font-family: 'Tahoma', sans-serif;
+    margin-right: 0;
+    color: #4858a8;
+    font-size: 11px;
+    padding-top: 5px;
+    text-align: right;
+    width: 118px;
+    margin: 12px 15px 0 0;
+}
+
+.footer_win span
+{
+    display: block;
+    color: #81afe2;
 }
