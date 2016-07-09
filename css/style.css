@@ -1,139 +1,113 @@
-body, div, ul, li, p
-{
-    margin: 0;
-    padding: 0;
-}
-
-div.clear
-{
-    clear: both;
-}
-
-a
-{
-    text-decoration: none;
-}
-
-a img
-{
-    border: none;
-}
-
-img
-{
-    display: block;
-}
-
 body
 {
-    margin: auto;
-    background-color: #fff;
-    width: 100%;
+    font-family: Tahoma, "Geneva CY", sans-serif;
 }
 
-header
+.header
 {
     background-image: linear-gradient(to bottom, #fefefe, #eff0f0);
-    font-family: Tahoma, 'Geneva CY', sans-serif;
 }
 
-.header_row
+.header-row
 {
     width: 980px;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: auto;
 }
 
-.header_row:last-child
+.logo
 {
-    padding-top: 3px;
-}
-
-.logo   
-{
-    float: left;
     margin: 33px 41px 0 0;
+    float: left;
+    background: url(../img/logo.png) no-repeat;
+    width: 229px;
+    height: 32px;
 }
 
 .slogan
 {
-    font-size: 12px;
-    width: 160px;
-    color: #2a292a;
+    margin: 29px 90px 0 0;
     float: left;
-    margin: 29px 0 0 0;
+    width: 160px;
+    font-size: 12px;
+    color: #2a292a;
     line-height: 1.5;
 }
 
 .skolkovo
 {
-    float: right;
-    margin-right: 52px; 
+    margin: 0 54px 0 0;
+    float: left;
+    background: url(../img/scolkovo.png) no-repeat;
+    width: 60px;
+    height: 78px;
 }
 
 .support
 {
-    float: right;
+    margin: 23px 7px 0 0;
+    padding: 10px 15px;
+    float: left;
     font-weight: 400;
     color: #646464;
     width: 190px;
-    padding: 10px 15px;
-    margin: 21px 7px 0 0;
 }
 
-.support_header
+.support-tel
 {
-    font-size: 11px;
-}
-
-.support_header a
-{
+    text-decoration: none;
     font-weight: bold;
     font-size: 16px;
     color: #343434;
 }
 
-.support_header span
+.support-header
+{
+    font-size: 11px;
+}
+
+clear: left;
+.support-header span
 {
     border-bottom: 1px dashed #b5c1ed;
 }
 
 .catalog
 {
+    margin: 32px 0 0 0;
+    padding: 7px 12px 11px;
     float: right;
     display: block;
     background: url(../img/buttions.png) no-repeat 0 -80px;
-    font-family: "Franklin Gothic Book", sans-serif;
+    font-family: "Franklin Gothic Book", sans-serif; /*TODO: find font stack!*/
     font-size: 13px;
     color: #fff;
-    padding: 7px 12px 11px;
     text-align: center;
-    margin-top: 32px;
 }
 
-.header_menu
+.header-menu
 {
     background-image: linear-gradient(to bottom, #f4f4f4, #ffffff);
     float: left;
 }
 
-.header_menu ul
+.header-menu ul
 {
     padding: 0 1px;
 }
 
-.header_menu ul li
+.header-menu ul li
 {
     display: inline-block;
     margin-left: -4px;
 }
 
-.header_menu ul li:first-child
+.header-menu ul li:first-child
 {
     margin-left: 0;
 }
 
-.menu_item
+.menu-item
 {
     background-image: linear-gradient(to bottom, #f4f4f4, #e8eae9);
     display: block;
@@ -143,7 +117,7 @@ header
     color: #343434;
 }
 
-.menu_item:hover,.active
+.menu-item:hover,.active
 {
     border-bottom: 3px solid #B31D27;
     border-left: 1px solid #eff0f0;
@@ -151,7 +125,7 @@ header
     background-image: linear-gradient(to bottom, #f4f4f4, #ffffff)
 }
 
-.right_bar
+.right-bar
 {
     float: right;
     padding-top: 12px;
@@ -163,7 +137,7 @@ header
     vertical-align: bottom;
 }
 
-.right_bar .icon
+.right-bar .icon
 {
     margin-right: 1px;
 }
@@ -182,7 +156,7 @@ header
     background: url(../img/icons.png) no-repeat -156px -93px;
 }
 
-.right_bar_item
+.right-bar-item
 {
     display: inline-block;
     text-align: center;
@@ -192,12 +166,12 @@ header
     text-decoration: underline;
 }
 
-.right_bar_item:first-child
+.right-bar-item:first-child
 {
     margin-right: 7px;
 }
 
-.content_container
+.content-container
 {
     width: 980px;
     margin: 0 auto;
@@ -210,7 +184,7 @@ header
     margin-bottom: 20px;
 }
 
-.posts_container
+.posts-container
 {
     float: left;
     width: 733px;
@@ -218,18 +192,18 @@ header
     padding: 0 15px;
 }
 
-.post_image
+.post-image
 {
     position: relative;
     margin-bottom: 20px;
 }
 
-.post_image image
+.post-image image
 {
     display: inline-block;
 }
 
-.image_header
+.image-header
 {
     position: absolute;
     bottom: 0;
@@ -237,27 +211,27 @@ header
     width: 694px;
 }
 
-.post_title
+.post-title
 {
     font: 36px 'Franklin Gothic Book', sans-serif;
     padding: 15px 30px;
     margin: 0;
 }
 
-.post_title a
+.post-title a
 {
     color: #fff;
     border-bottom:1px solid #fff;
     text-decoration:none
 }
 
-.image_footer
+.image-footer
 {
     float: left;
     background: #01080d;
     padding: 2px 10px 3px 10px;
     margin: 0 0 10px 20px;
-    font: 12px 'Tahoma', sans-serif;
+    font-size: 12px;
 }
 
 .time
@@ -265,7 +239,7 @@ header
     margin-right: 15px;
 }
 
-.time,.image_footer a
+.time,.image-footer a
 {
     color: #858585;
 }
@@ -275,7 +249,7 @@ header
     margin-right: 17px;
 }
 
-.image_footer .icon
+.image-footer .icon
 {
     margin-right: 7px;
 }
@@ -287,41 +261,41 @@ header
     background: url('../img/icons.png') no-repeat -88px -103px; 
 }
 
-.post_text, .post_text a
+.post-text, .post-text a
 {
     font-family: Verdana, Arial, sans-serif;
     font-size: 14px;
     line-height: 160%;
 }
 
-.post_text a, .tags a
+.post-text a, .tags a
 {
     color: #354f71;
     text-decoration: underline;
 }
 
-.post_text p
+.post-text p
 {
     margin-bottom: 15px;
 }
 
-.post_text ul
+.post-text ul
 {
     list-style-position: inside;
     margin: 0 0 10px 21px;
 }
 
-.post_text li
+.post-text li
 {
     line-height: 200%;
 }
 
-.post_footer
+.post-footer
 {
     overflow: hidden;
 }
 
-.tag_ico
+.tag-ico
 {
     background: url('../img/icons.png') no-repeat -47px -103px;
     width: 23px;
@@ -335,7 +309,6 @@ header
 
 .tags a
 {
-    font-family: Tahoma;
     font-size: 12px;
 }
 
@@ -379,11 +352,10 @@ header
     height: 16px;
 }
 
-a.commentary
+a.comment
 {
     background-color: #768FA5;
     color: #fff;
-    font-family: Tahoma;
     font-size: 12px;
     border-radius: 10px;
     float: right;
@@ -391,34 +363,34 @@ a.commentary
     margin: 4px 20px 0 0;
 }
 
-.widget_container
+.widget-container
 {
     float: right;
     width: 224px;
 }
 
-.widget_item
+.widget-item
 {
     background: #EFF0F2 url('../img/widget-bg.png');
 }
 
-.subscribe_form
+.subscribe-form
 {
     color: #354f71;
     margin-bottom: 20px;
-    font: 12px 'Tahoma', sans-serif;
+    font-size: 12px;
     padding: 15px 12px 10px 12px;
     border: 8px solid #eff0f2;
 }
 
-.widget_header
+.widget-header
 {
     color: #354f71;
     font: 17px 'Franklin Gothic', sans-serif;
     margin-bottom: 15px;
 }
 
-.subscribe_form .input_email
+.subscribe-form .input-email
 {
     height: 30px;
     width: 166px;
@@ -429,7 +401,7 @@ a.commentary
     margin-bottom: 10px;
 }
 
-.subscribe_form .subscribe
+.subscribe-form .subscribe
 {
     background-color: #4a68ac;
     background-image: linear-gradient(to bottom, #5574b8, #3c589d);
@@ -443,26 +415,26 @@ a.commentary
     margin-bottom: 16px;
 }
 
-.subscribe_form .subscribers
+.subscribe-form .subscribers
 {
     font-size: 11px;
     color: #768fa5;
     font-style: italic;
 }
 
-.blog_search
+.blog-search
 {
     padding: 26px 20px;
     margin-bottom: 20px;
 }
 
-.blog_search .widget_header, .popular_posts .widget_header
+.blog-search .widget-header, .popular-posts .widget-header
 {
     padding-left: 5px;
     margin-bottom: 13px;
 }
 
-.input_search
+.input-search
 {
     height: 30px;
     width: 145px;
@@ -482,29 +454,28 @@ a.commentary
     border: 0;
 }
 
-.popular_posts
+.popular-posts
 {
-     padding: 26px 20px;
-     font-family:'Tahoma', sans-serif;
+    padding: 26px 20px;
 }
 
-.popular_posts ul
+.popular-posts ul
 {
     list-style: none;
 }
 
-.popular_posts li
+.popular-posts li
 {
     margin-bottom: 24px;
     margin-left: 5px;
 }
 
-.popular_posts li:last-child
+.popular-posts li:last-child
 {
     margin-bottom: 0;
 }
 
-.popular_posts .date
+.popular-posts .date
 {
     color: #fff;
     font-size: 11px;
@@ -515,7 +486,7 @@ a.commentary
     margin-bottom: 7px;
 }
 
-.popular_posts a
+.popular-posts a
 {
     color: #354f71;
     text-decoration: underline;
@@ -524,12 +495,12 @@ a.commentary
     display: block;
 }
 
-.footer_menu
+.footer-menu
 {
     background-image: radial-gradient(#1a4988, #013c7b);
 }
 
-.footer_container
+.footer-container
 {
     width: 980px;
     margin: 0 auto;
@@ -540,7 +511,6 @@ a.commentary
 .colomn
 {
     float: left;
-    font-family: 'Tahoma', sans-serif;
     margin-right: 45px;
 }
 
@@ -554,7 +524,7 @@ a.commentary
     float: right;
     margin-right: 85px;
 }
-.colomn_title
+.colomn-title
 {
     font-family: "Franklin Gothic Book", sans-serif;
     font-size: 18px;
@@ -570,7 +540,6 @@ a.commentary
     font-size: 11px;
     color: #a8c5ff;
     line-height: 22px;
-    font-family: 'Tahoma', sans-serif;
     margin-bottom: 26px;
 }
 
@@ -580,10 +549,9 @@ a.commentary
     font-size: 11px;
     color: #a8c5ff;
     line-height: 22px;
-    font-family: 'Tahoma', sans-serif;
 }
 
-.phone_ico
+.phone-ico
 {
     background: url('../img/icons.png') no-repeat -200px -50px;
     width: 26px;
@@ -592,7 +560,7 @@ a.commentary
     margin-right: 5px;
 }
 
-.email_ico
+.email-ico
 {
     background: url('../img/icons.png') no-repeat -150px -50px;
     width: 26px;
@@ -601,7 +569,7 @@ a.commentary
     margin-right: 5px;
 }
 
-.partner_ico
+.partner-ico
 {
     background: url('../img/icons.png') no-repeat -200px 0;
     width: 26px;
@@ -633,12 +601,12 @@ ul.contact li a
     display: inline-block;
 }
 
-.footer_down
+.footer-down
 {
     background: url('../img/footer-bg.png');
 }
 
-.footer_down_container
+.footer-down-container
 {
     width: 980px;
     margin: 0 auto;
@@ -646,35 +614,34 @@ ul.contact li a
     padding: 20px 0 30px 40px;
 }
 
-.colomn_down
+.colomn-down
 {
     float: left;
-    font-family: 'Tahoma', sans-serif;
     margin-right: 97px;
 }
 
-.footer_logo
+.footer-logo
 {
     background: url('../img/footer-logo.png') no-repeat 0 0;
     width: 143px;
     height: 23px;
 }
 
-.footer_title
+.footer-title
 {
     color: #4858a8;
     font-size: 11px;
     padding-top: 5px;
 }
 
-ul.social_in_footer
+ul.social-in-footer
 {
     float: left;
     list-style: none;
     margin: 5px 78px 0 0;
 }
 
-.social_in_footer li
+.social-in-footer li
 {
     width: 26px;
     height: 26px;
@@ -682,11 +649,15 @@ ul.social_in_footer
     margin-right: 4px;
 }
 
-.social_in_footer a
+.social-in-footer a
 {
     display: block;
     height: 100%;
     width: 100%;
+}
+
+.icon-soial {
+    
 }
 
 .fb
@@ -751,10 +722,9 @@ a.yandex
     float: right;
 }
 
-.footer_win
+.footer-win
 {
     float: right;
-    font-family: 'Tahoma', sans-serif;
     margin-right: 0;
     color: #4858a8;
     font-size: 11px;
@@ -764,7 +734,7 @@ a.yandex
     margin: 12px 15px 0 0;
 }
 
-.footer_win span
+.footer-win span
 {
     display: block;
     color: #81afe2;
