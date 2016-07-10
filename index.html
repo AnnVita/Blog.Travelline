@@ -1,52 +1,111 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="UTF-8" />
+      <meta charset="utf-8" />
       <title>Блог TravelLine – Советы и новости для успешных отельеров. Помогаем повысить онлайн-продажи в гостинице</title>
       <link rel="stylesheet" href="css/reset.css"/>
       <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
       <div class="header">
-          <div class="header-row">
-              <a href="http://www.travelline.ru/?from=Blog_Verh" class="logo"></a>
+          <div class="header-row clearfix">
+              <a href="http://www.travelline.ru/?from=Blog_Verh" title="Система бронирования гостиниц" class="logo icon"></a>
               <div class="slogan">
                   Стандарт онлайн-продаж
                   успешных отельеров
               </div>
-              <a href="http://blog.travelline.ru/developments/skolkovo/" class="skolkovo"></a>
+              <a href="http://blog.travelline.ru/developments/skolkovo/" class="skolkovo icon"></a>
               <div class="support">
                   <div class="support-header">
                       <a href="tel:88005552030" class="support-tel">8 800 555-20-30</a>
-                      Бесплатно <span class="">по России</span>
+                      Бесплатно <span class="support-tel-where">по России</span>
                   </div>
               </div>
-              <a class="catalog" href="http://www.travelline.ru/hotels/?from=Blog_Verh">Каталог гостиниц</a>
+              <a href="http://www.travelline.ru/hotels/?from=Blog_Verh" title="Каталог гостиниц" class="catalog">Каталог гостиниц</a>
         </div>
-        <div class="header-row">
+        <div class="header-row clearfix">
             <div class="header-menu">
-                <ul>
-                    <li><a href="http://www.travelline.ru/products/?from=Blog_Verh" class="menu-item">Продукты и услуги</a></li>
-                    <li><a href="http://www.travelline.ru/portfolio/?from=Blog_Verh" class="menu-item">Портфолио</a></li>
-                    <li><a href="http://www.travelline.ru/reviews/?from=Blog_Verh" class="menu-item">Отзывы</a></li>
-                    <li><a href="http://blog.travelline.ru" class="menu-item active">Блог</a></li>
-                    <li><a href="http://www.travelline.ru/about/?from=Blog_Verh" class="menu-item">О компании</a></li>
-                    <li><a href="http://www.travelline.ru/contacts/?from=Blog_Verh" class="menu-item">Контакты</a></li>
+                <ul class="menu-ul">
+                    <li class="menu-item-li first-menu-li"><a href="http://www.travelline.ru/products/?from=Blog_Verh" title="Продукты и услуги" class="menu-item-link">Продукты и услуги</a></li>
+                    <li class="menu-item-li"><a href="http://www.travelline.ru/portfolio/?from=Blog_Verh" title="Портфолио" class="menu-item-link">Портфолио</a></li>
+                    <li class="menu-item-li"><a href="http://www.travelline.ru/reviews/?from=Blog_Verh" title="Отзывы" class="menu-item-link">Отзывы</a></li>
+                    <li class="menu-item-li"><a href="http://blog.travelline.ru" title="Блог" class="menu-item-link active-menu-link">Блог</a></li>
+                    <li class="menu-item-li"><a href="http://www.travelline.ru/about/?from=Blog_Verh" title="О компании" class="menu-item-link">О компании</a></li>
+                    <li class="menu-item-li"><a href="http://www.travelline.ru/contacts/?from=Blog_Verh" title="Контакты" class="menu-item-link">Контакты</a></li>
                 </ul>
             </div>
-            <div class="right-bar">
-                <a class="right-bar-item" href="https://www.travelline.ru/secure/">
-                    <span class="icon person"></span>
-                    <span>Вход</span>
+            <div class="authorization-block">
+                <a href="https://www.travelline.ru/secure/" title="Вход" class="authorization-block-item">
+                    <span class="person-icon icon"></span>
+                    <span class="authorization-item-text">Вход</span>
                 </a>
-               <a class="right-bar-item" href="https://www.travelline.ru/registration/?from=Blog-Verh">
-                   <span class="icon star"></span>
-                   <span>Стать партнером</span>
+               <a href="https://www.travelline.ru/registration/?from=Blog-Verh" title="Стать партнером" class="authorization-block-item">
+                   <span class="star-icon icon"></span>
+                   <span class="authorization-item-text">Стать партнером</span>
                </a>
             </div>
         </div>
     </div>
-    <div class="content-container">
+    <div class="container clearfix">
+        <div class="content">
+            
+        </div>
+        <div class="sidebar">
+            <div class="widget-container">
+                <div class="widget-item">
+                    <form class="subscribe-form" method="post">
+                        <div class="widget-header subscribe-header">Тренды, новости, кейсы гостиничной индустрии</div>
+                        <input type="email" class="input-email" placeholder="Введите email" />
+                        <input type="submit" class="subscribe" value="Подписаться на блог" />
+                        <span class="subscribers">Нас читают более 1 000 отельеров</span>
+                    </form>
+                </div>
+                <div class="widget-item">
+                    <form class="blog-search" method="get">
+                        <div class="widget-header search-header">Искать в блоге</div>
+                        <input class="input-search" placeholder="Поиск..." />
+                        <input class="search-icon icon" />
+                    </form>
+                </div>
+                <div class="popular-posts widget-item">
+                    <div class="widget-header popular-posts-header">Популярные записи</div>
+                    <ul>
+                        <li class="popular-posts-li">
+                            <span class="popular-post-date">
+                                07/08/2014
+                            </span>
+                            <a href="http://blog.travelline.ru/tl-life/skolkovo/" title="Свершилось! TravelLine стал резидентом «Сколково»" class="popular-post-link">Свершилось! TravelLine стал резидентом «Сколково»</a>
+                        </li>
+                        <li class="popular-posts-li">
+                            <span class="popular-post-date">
+                                24/07/2015
+                            </span>
+                            <a href="http://blog.travelline.ru/promotion/bez-chego-nelzya-prodvigat-otel-v-instagrame/" title="Без чего нельзя продвигать отель в «Инстаграме»?" class="popular-post-link">Без чего нельзя продвигать отель в «Инстаграме»?</a>
+                        </li>
+                        <li class="popular-posts-li">
+                            <span class="popular-post-date">
+                                05/08/2015
+                            </span>
+                            <a href="http://blog.travelline.ru/more-booking/email-rassylka-otelya-na-cto-obratit-vnimanie/" title="Email-рассылка отеля: на что обратить внимание" class="popular-post-link">Email-рассылка отеля: на что обратить внимание</a>
+                        </li>
+                        <li class="popular-posts-li">
+                            <span class="popular-post-date">
+                                25/06/2015
+                            </span>
+                            <a href="http://blog.travelline.ru/more-booking/stroim-dinamicheskoe-cenoobrazovanie-v-otele/" title="Строим динамическое ценообразование в отеле" class="popular-post-link">Строим динамическое ценообразование в отеле</a>
+                        </li>
+                        <li class="popular-posts-li">
+                            <span class="popular-post-date">
+                                26/10/2015
+                            </span>
+                            <a href="http://blog.travelline.ru/more-booking/kak-raspoznat-nesovremennuyu-strategiyu-prodazh-otelya/" title="Как отелю построить несовременную стратегию продаж: античек-..." class="popular-post-link">Как отелю построить несовременную стратегию продаж: античек-...</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="content-container">
         <div class="posts-container">
             <div class="post">
                <div class="post-image">
@@ -59,8 +118,8 @@
                         </h2>
                         <div class="image-footer">
                             <span class="time">24.06.2016</span>
-                            <a class="author" href="http://blog.travelline.ru/author/romanefremov/" ><span class="icon person"></span>Роман Ефремов</a>
-                            <a class="more-booking" href="http://blog.travelline.ru/category/more-booking/"><span class="icon flag"></span>Больше броней</a>
+                            <a class="author" href="http://blog.travelline.ru/author/romanefremov/" ><span class="person-icon icon"></span>Роман Ефремов</a>
+                            <a class="more-booking" href="http://blog.travelline.ru/category/more-booking/"><span class="flag icon"></span>Больше броней</a>
                         </div>
                    </div>
                </div>
@@ -97,55 +156,7 @@
                </div>
             </div>
         </div>
-        <div class="widget-container">
-          <form class="subscribe-form widget-item" method="post">
-              <div class=widget-header>Тренды, новости, кейсы гостиничной индустрии</div>
-              <input type="email" class="input-email" placeholder="Введите email" />
-              <input type="submit" class="subscribe" value="Подписаться на блог" />
-              <span class="subscribers">Нас читают более 1 000 отельеров</span>
-          </form>
-          <form class="blog-search widget-item" method="get">
-              <div class=widget-header>Искать в блоге</div>
-              <input class="input-search" placeholder="Поиск..." />
-              <input class="search" />
-          </form>
-          <div class="popular-posts widget-item">
-              <div class=widget-header>Популярные записи</div>
-              <ul>
-                  <li>
-                      <span class="date">
-                          07/08/2014
-                      </span>
-                      <a href="http://blog.travelline.ru/tl-life/skolkovo/">Свершилось! TravelLine стал резидентом «Сколково»</a>
-                  </li>
-                  <li>
-                      <span class="date">
-                          24/07/2015
-                      </span>
-                      <a href="http://blog.travelline.ru/promotion/bez-chego-nelzya-prodvigat-otel-v-instagrame/" >Без чего нельзя продвигать отель в «Инстаграме»?</a>
-                  </li>
-                  <li>
-                      <span class="date">
-                          05/08/2015
-                      </span>
-                      <a href="http://blog.travelline.ru/more-booking/email-rassylka-otelya-na-cto-obratit-vnimanie/" >Email-рассылка отеля: на что обратить внимание</a>
-                  </li>
-                  <li>
-                      <span class="date">
-                          25/06/2015
-                      </span>
-                      <a href="http://blog.travelline.ru/more-booking/stroim-dinamicheskoe-cenoobrazovanie-v-otele/">Строим динамическое ценообразование в отеле</a>
-                  </li>
-                  <li>
-                      <span class="date">
-                          26/10/2015
-                      </span>
-                      <a href="http://blog.travelline.ru/more-booking/kak-raspoznat-nesovremennuyu-strategiyu-prodazh-otelya/">Как отелю построить несовременную стратегию продаж: античек-...</a>
-                  </li>
-              </ul>
-          </div>
-        </div>
-    </div>
+    </div>-->
     <div class="footer-menu">
         <div class="footer-container">
             <div class="colomn">
@@ -205,15 +216,15 @@
                     <ul class="contact">
                         <li>
                             <div class="tel">+7 800 555-20-30</div>
-                            <div class="phone-ico"></div>
+                            <div class="phone-ico icon"></div>
                         </li>
                         <li>
                             <a href="mailto:info@travelline.ru">Email: info@travelline.ru</a>
-                            <div class="email-ico"></div>
+                            <div class="email-ico icon"></div>
                         </li>
                         <li>
                             <a href="https://travelline.ru/secure/">Вход для партнеров</a>
-                            <div class="partner-ico"></div>
+                            <div class="partner-ico icon"></div>
                         </li>
                     </ul>
                 </div>
@@ -222,7 +233,7 @@
     <div class="footer-down">
         <div class="footer-down-container">
             <div class="colomn-down">
-                <div class="footer-logo"></div>
+                <div class="footer-logo icon"></div>
                 <div class="footer-title">© TravelLine. 2008—2016</div>
             </div>
             <ul class="social-in-footer">
@@ -237,7 +248,7 @@
                 <li><a class="ln" href="http://www.linkedin.com/company/travelline/" title="TravelLine в Linkedin"></a></li>
             </ul>
             <a class="yandex" href="http://yandex.ru/cy?base=0&host=www.travelline.ru"></a>
-            <div class="windows"></div>
+            <div class="windows icon"></div>
             <div class="footer-win">Платформа TravelLine совместима c <span>Windows Server ® 2012</span></div>
         </div>
     </div>

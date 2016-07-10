@@ -3,6 +3,18 @@ body
     font-family: Tahoma, "Geneva CY", sans-serif;
 }
 
+.clearfix:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.icon
+{
+    background: url('../img/sprite.png') no-repeat;
+}
+
 .header
 {
     background-image: linear-gradient(to bottom, #fefefe, #eff0f0);
@@ -12,14 +24,13 @@ body
 {
     width: 980px;
     margin: 0 auto;
-    overflow: auto;
 }
 
 .logo
 {
     margin: 33px 41px 0 0;
     float: left;
-    background: url(../img/logo.png) no-repeat;
+    background-position: 0 -1px;
     width: 229px;
     height: 32px;
 }
@@ -38,14 +49,14 @@ body
 {
     margin: 0 54px 0 0;
     float: left;
-    background: url(../img/scolkovo.png) no-repeat;
+    background-position: -1px -40px;
     width: 60px;
     height: 78px;
 }
 
 .support
 {
-    margin: 23px 7px 0 0;
+    margin: 23px 0 0 0;
     padding: 10px 15px;
     float: left;
     font-weight: 400;
@@ -55,6 +66,8 @@ body
 
 .support-tel
 {
+    margin: 0 0 2px 0;
+    display: block;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -66,8 +79,7 @@ body
     font-size: 11px;
 }
 
-clear: left;
-.support-header span
+.support-tel-where
 {
     border-bottom: 1px dashed #b5c1ed;
 }
@@ -75,115 +87,126 @@ clear: left;
 .catalog
 {
     margin: 32px 0 0 0;
-    padding: 7px 12px 11px;
+    padding: 8px 12px 10px 11px;
     float: right;
     display: block;
-    background: url(../img/buttions.png) no-repeat 0 -80px;
+    background: linear-gradient(to bottom, #4e79bb, #30599c);
+    box-shadow: 0 3px 4px -2px #808080;
+    border-radius: 3px;
     font-family: "Franklin Gothic Book", sans-serif; /*TODO: find font stack!*/
     font-size: 13px;
     color: #fff;
     text-align: center;
+    text-decoration: none;
+}
+
+.catalog:hover
+{
+    background: linear-gradient(to bottom, #5685ce, #3563ad);
 }
 
 .header-menu
 {
+    margin: 2px 0 0 0;
     background-image: linear-gradient(to bottom, #f4f4f4, #ffffff);
     float: left;
 }
 
-.header-menu ul
+.menu-ul
 {
     padding: 0 1px;
+    word-spacing: -4px;
 }
 
-.header-menu ul li
+.menu-item-li
 {
     display: inline-block;
-    margin-left: -4px;
+    word-spacing: normal;
+    border-left: 1px solid #eff0f0;
 }
 
-.header-menu ul li:first-child
+.first-menu-li
 {
-    margin-left: 0;
+    border-left: 0;
 }
 
-.menu-item
+.first-menu-li:hover
 {
+    border-left: 1px solid #eff0f0;
+    margin-left: -1px;
+}
+
+.menu-item-link
+{
+    padding: 13px 22px 16px 22px;
     background-image: linear-gradient(to bottom, #f4f4f4, #e8eae9);
     display: block;
     font-size: 14px;
     border-bottom: 3px solid #afb2c1;
-    padding: 13px 21px 15px 23px;
     color: #343434;
+    text-decoration: none;
 }
 
-.menu-item:hover,.active
+.menu-item-link:hover,.active-menu-link
 {
     border-bottom: 3px solid #B31D27;
-    border-left: 1px solid #eff0f0;
-    padding-left: 22px;
-    background-image: linear-gradient(to bottom, #f4f4f4, #ffffff)
+    background: inherit;
 }
 
-.right-bar
+.authorization-block
 {
     float: right;
-    padding-top: 12px;
+    padding-top: 16px;
+    word-spacing: 9px;
 }
 
-.icon
+.person-icon
 {
+    background-position: 0 -228px;
     display: inline-block;
-    vertical-align: bottom;
+    width: 17px;
+    height: 17px;    
+    vertical-align: middle;
 }
 
-.right-bar .icon
+.star-icon
 {
-    margin-right: 1px;
-}
-
-.person
-{
+    background-position: -52px -252px;
+    display: inline-block;
     width: 17px;
     height: 17px;
-    background: url('../img/icons.png') no-repeat 0 -45px;    
+    vertical-align: middle;
 }
 
-.star
-{
-    width: 17px;
-    height: 17px;
-    background: url(../img/icons.png) no-repeat -156px -93px;
-}
-
-.right-bar-item
+.authorization-block-item
 {
     display: inline-block;
-    text-align: center;
+    vertical-align: middle;
     line-height: 17px;
     font-size: 11px;
     color: #343434;
+    word-spacing: normal;
+    text-decoration: none;
+}
+
+.authorization-item-text
+{
     text-decoration: underline;
 }
 
-.right-bar-item:first-child
-{
-    margin-right: 7px;
-}
-
-.content-container
+.container
 {
     width: 980px;
     margin: 0 auto;
-    overflow: hidden;
     padding-top: 30px;
 }
 
-.post
+.sidebar
 {
-    margin-bottom: 20px;
+    float: left;
+    width: 224px;
 }
-
+/*-----*/
 .posts-container
 {
     float: left;
@@ -192,23 +215,22 @@ clear: left;
     padding: 0 15px;
 }
 
+.post
+{
+    margin-bottom: 20px;
+}
+
 .post-image
 {
     position: relative;
     margin-bottom: 20px;
 }
 
-.post-image image
-{
-    display: inline-block;
-}
-
 .image-header
 {
     position: absolute;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.33) 0%,rgba(0,0,0,0.94) 100%);
-    width: 694px;
+    background: linear-gradient(to bottom, #ababab, #0f0f0f);
 }
 
 .post-title
@@ -312,46 +334,6 @@ clear: left;
     font-size: 12px;
 }
 
-.social
-{
-    float: left;
-}
-
-.facebook
-{
-    background: url('../img/social.jpg') no-repeat -3px -87px;
-    width: 15px;
-    height: 15px;
-}
-
-.twitter
-{
-    background: url('../img/social.jpg') no-repeat -2px -33px;
-    width: 16px;
-    height: 16px;
-}
-
-.vkontake
-{
-    background: url('../img/social.jpg') no-repeat 0 -60px;
-    width: 16px;
-    height: 16px;
-}
-
-.google
-{
-    background: url('../img/social.jpg') no-repeat 0 -113px;
-    width: 15px;
-    height: 20px;
-}
-
-.odnoklassniki
-{
-    background: url('../img/social.jpg') no-repeat -6px -3px;
-    width: 10px;
-    height: 16px;
-}
-
 a.comment
 {
     background-color: #768FA5;
@@ -362,13 +344,7 @@ a.comment
     padding: 1px 5px;
     margin: 4px 20px 0 0;
 }
-
-.widget-container
-{
-    float: right;
-    width: 224px;
-}
-
+/*---*/
 .widget-item
 {
     background: #EFF0F2 url('../img/widget-bg.png');
@@ -376,43 +352,67 @@ a.comment
 
 .subscribe-form
 {
-    color: #354f71;
-    margin-bottom: 20px;
-    font-size: 12px;
+    margin: 0 0 20px 0;
     padding: 15px 12px 10px 12px;
+    color: #354f71;
+    font-size: 12px;
     border: 8px solid #eff0f2;
 }
 
 .widget-header
 {
     color: #354f71;
-    font: 17px 'Franklin Gothic', sans-serif;
-    margin-bottom: 15px;
+    font-family: 'Franklin Gothic', sans-serif;
 }
 
-.subscribe-form .input-email
+.subscribe-header
 {
+    margin: 0 0 15px 0;
+    font-size: 17px;
+}
+
+.search-header
+{
+    margin: 0 0 11px 0;
+    padding: 0 0 0 5px;
+    font-size: 18px;
+}
+
+.popular-posts-header
+{
+    margin: 0 0 18px 0;
+    padding: 0 0 0 5px;
+    font-size: 18px;
+}
+
+.input-email
+{
+    margin: 0 0 10px 0;
+    padding: 0 8px;
     height: 30px;
     width: 166px;
     border-radius: 4px;
-    padding: 0 8px;
     box-shadow: inset 0 1px 4px 0 #eee;
     border: 1px solid #ccc;
-    margin-bottom: 10px;
+    font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+    font-size: 14px;
 }
 
-.subscribe-form .subscribe
+.subscribe
 {
+    margin: 0 0 18px 0;
+    padding: 2px 0;
     background-color: #4a68ac;
     background-image: linear-gradient(to bottom, #5574b8, #3c589d);
+    box-shadow: 0 1px 2px 0px rgba(166, 166, 166, 0.5);
     color: #fff;
     line-height: 30px;
     text-align: center;
     border-radius: 4px;
     border: 1px solid #6c8cd1;
-    box-shadow: 0 1px 2px 0px rgba(166, 166, 166, 0.5);
     width: 100%;
-    margin-bottom: 16px;
+    font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+    font-size: 12px;
 }
 
 .subscribe-form .subscribers
@@ -424,14 +424,8 @@ a.comment
 
 .blog-search
 {
-    padding: 26px 20px;
-    margin-bottom: 20px;
-}
-
-.blog-search .widget-header, .popular-posts .widget-header
-{
-    padding-left: 5px;
-    margin-bottom: 13px;
+    margin: 0 0 20px 0;
+    padding: 26px 20px 35px 20px;
 }
 
 .input-search
@@ -445,53 +439,43 @@ a.comment
     border: 1px solid #ccc;
 }
 
-.search
+.search-icon
 {
-    background: url('../img/search-button.png');
+    background-position: -3px -194px;
     width: 30px;
-    height: 30px;
+    height: 29px;
     float: right;
     border: 0;
 }
 
 .popular-posts
 {
-    padding: 26px 20px;
+    padding: 27px 20px 9px 20px;
 }
 
-.popular-posts ul
+.popular-posts-li
 {
-    list-style: none;
+    margin: 0 0 22px 5px;
 }
 
-.popular-posts li
+.popular-post-date
 {
-    margin-bottom: 24px;
-    margin-left: 5px;
-}
-
-.popular-posts li:last-child
-{
-    margin-bottom: 0;
-}
-
-.popular-posts .date
-{
+    margin: 0 0 8px 0;
+    padding: 3px 4px;
     color: #fff;
     font-size: 11px;
-    padding: 3px 4px;
     font-weight: normal;
     background: #718f9f;
     display: inline-block;
-    margin-bottom: 7px;
 }
 
-.popular-posts a
+.popular-post-link
 {
     color: #354f71;
     text-decoration: underline;
     font: inherit;
-    font-size: 11px;
+    font-size: 12px;
+    line-height: 15px;
     display: block;
 }
 
